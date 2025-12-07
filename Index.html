@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibo's Creation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" class="logo" alt="Bibo's Creation Logo">
+    <h1>Bibo's Creation</h1>
+
+    <nav class="menu">
+        <a href="#" onclick="filterCategory('all')">All</a>
+        <a href="#" onclick="filterCategory('earrings')">Earrings</a>
+        <a href="#" onclick="filterCategory('drawings')">Drawings</a>
+    </nav>
+</header>
+
+<div id="gallery" class="gallery"></div>
+
+<!-- Owner Upload Panel -->
+<div id="ownerPanel" class="owner-panel hidden">
+    <h2>Owner Upload Panel</h2>
+    <input id="imageUpload" type="file" accept="image/*"><br><br>
+    <input id="descUpload" type="text" placeholder="Enter description"><br><br>
+
+    <select id="categorySelect">
+        <option value="earrings">Earrings</option>
+        <option value="drawings">Drawings</option>
+    </select>
+    <br><br>
+
+    <button onclick="uploadItem()">Upload Item</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
